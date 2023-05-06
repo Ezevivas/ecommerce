@@ -68,12 +68,12 @@ import { useDisclosure } from '@mantine/hooks';
   
   
     return (
-      <Box pb={100}> 
-        <Header height={70} px="md">
-          <Group position="apart" sx={{ height: '100%' }}>
+      <Box pb={120}> 
+        <Header height={80} px="md">
+          <Group position="apart" sx={{ height: '80%' }}>
           <img src="../../public/MyDrap.svg" alt="MyDrap" height={80} />
   
-            <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
+            <Group sx={{ height: '100%' }} spacing={10} className={classes.hiddenMobile}>
               <a href="#" className={classes.link}>
                 Catalogue
               </a>
