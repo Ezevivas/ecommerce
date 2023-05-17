@@ -1,6 +1,7 @@
 
 import React from "react";
 import Grid from "./Components/Grid";
+import { AuthenticationTitle } from "./Components/Login";
 import { Footer } from "./Components/Footer";
 import { Container } from "@mantine/core";
 import { HeaderMegaMenu } from "./Components/Header";
@@ -32,10 +33,10 @@ const App = () => {
   return (
       <React.Suspense fallback="Loading...">
         <HeaderMegaMenu/>
-        <Container>
-        <h1> Catalogue</h1>
-          <Grid articles={cards} />
-        </Container>
+<Container>
+
+        <AuthenticationTitle/>
+</Container>
         <Footer links={links}/>
       </React.Suspense>
   );
