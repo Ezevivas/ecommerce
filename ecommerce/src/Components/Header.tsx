@@ -68,7 +68,7 @@ import { useDisclosure } from '@mantine/hooks';
   
   
     return (
-      <Box pb={100}> 
+      <Box  pb={10} > 
         <Header height={70} px="md">
           <Group position="apart" sx={{ height: '100%' }}>
           <img src="../../public/MyDrap.svg" alt="MyDrap" height={80} />

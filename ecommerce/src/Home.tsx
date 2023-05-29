@@ -1,4 +1,3 @@
-
 import React from "react";
 import Grid from "./Components/Grid";
 import { Authentication } from "./Components/Login";
@@ -6,13 +5,13 @@ import { Footer } from "./Components/Footer";
 import { Container } from "@mantine/core";
 import { HeaderMegaMenu } from "./Components/Header";
 import { Register } from "./Components/Register";
-import { ForgotPassword } from "./Components/ForgotPassword";
+import { Filter } from "./Components/Filter";
 
 
 const links = [
-  { link: "#", label: "Creator" },
-  { link: "#", label: "Shop" },
-  { link: "#", label: "Home" },
+  { link: "https://mantine.dev", label: "Creator" },
+  { link: "https://mantine.dev", label: "Shop" },
+  { link: "https://mantine.dev", label: "My Drap" },
 ]
 
 const cards = [
@@ -34,17 +33,20 @@ const cards = [
 
 
 
-const App = () => {
+const Home = () => {
   return (
+    
       <React.Suspense fallback="Loading...">
+        
         <HeaderMegaMenu/>
-<Container >
-    <ForgotPassword/>
-</Container>
+
+            <Filter/>
+            
         <Footer links={links}/>
+
       </React.Suspense>
+
   );
 };
 
-export default App;
-
+export default Home;
