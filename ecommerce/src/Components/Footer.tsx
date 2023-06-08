@@ -4,27 +4,27 @@ import Logo from '../../public/MyDrap.svg';
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: rem(100),
+    marginTop: rem(120),
     borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.red[5] : theme.colors.blue[1]
+      theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
   },
 
   inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: `${theme.spacing.md} ${theme.spacing.md}`,
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingTop: theme.spacing.xl,
+    paddingBottom: theme.spacing.xl,
 
-    [theme.fn.smallerThan('sm')]: {
-      flexDirection: 'column',
+    [theme.fn.smallerThan("xs")]: {
+      flexDirection: "column",
     },
   },
 
   links: {
-    [theme.fn.smallerThan('lg')]: {
-      marginTop: theme.spacing.lg,
-      marginBottom: theme.spacing.sm,
+    [theme.fn.smallerThan("xl")]: {
+      marginTop: theme.spacing.md,
     },
   },
 }));

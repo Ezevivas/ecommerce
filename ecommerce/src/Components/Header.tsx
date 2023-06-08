@@ -62,7 +62,7 @@ import { useDisclosure } from '@mantine/hooks';
     },
   }));
   
-  export function HeaderMegaMenu() {
+  export function HeaderMenu() {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
     const { classes, theme } = useStyles();
   

@@ -8,7 +8,6 @@ import {
   UnstyledButton,
   createStyles,
   rem,
-  Checkbox,
 } from '@mantine/core';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
@@ -70,7 +69,7 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
       className={classes.link}
       href={link.link}
       key={link.label}
-      onClick={(event) => event.preventDefault()}
+      
     >
       {link.label}
     </Text>
@@ -107,13 +106,10 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
 
 export function NavbarLinksGroup( LinksGroupProps: LinksGroupProps) {
   return (
-    <Box
-      sx={(theme) => ({
+    <Box sx={(theme) => ({
         minHeight: rem(220),
         padding: theme.spacing.md,
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
-      })}
-    >
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white, })} >
       <LinksGroup {...LinksGroupProps} />
     </Box>
   );
